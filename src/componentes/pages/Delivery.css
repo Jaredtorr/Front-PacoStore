@@ -1,0 +1,100 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 1.5rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+/* Header Styles */
+.delivery-header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    width: 100%;
+}
+
+/* Order Details Styles */
+.order-details {
+    background-color: #f9f9f9;
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    margin-top: 6rem; /* Adjusted to ensure no overlap with the navbar */
+    width: calc(100% - 4rem);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto; /* Ensure the content is scrollable if it overflows */
+}
+
+/* Table Styles */
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.order-table th, .order-table td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: left;
+}
+
+.order-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.product-image {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    display: block;
+}
+
+/* Container Styles */
+.delivery-container {
+    padding: 4rem 2rem;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto; /* Ensure the content is scrollable vertically */
+    position: relative;
+    top: 0;
+    left: 0;
+}
